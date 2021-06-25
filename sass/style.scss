@@ -1,5 +1,4 @@
 $fon: 'Nunito', sans-serif;
-$fon2: 'Overpass', sans-serif;
 $fon3: 'Advent Pro', sans-serif;
 
 $Daybreak-Blue: #3c2dff;
@@ -20,6 +19,7 @@ body {
   box-sizing: border-box;
   font-family: $fon;
   font-size: 16px;
+  background-color: #f7fafc;
 }
 
 *,
@@ -39,45 +39,97 @@ h2 {
 }
 
 /*******site Style ***/
+.mle{
+  margin-left: 209px;
+  margin-right: 15px;
+  padding: 0;
 
-.mrg {
-  margin: 0 209px;
 }
 
-.link-header {
-  font-family: $fon3;
-  font-size: 16px;
+main{
+  width: 1440px;
+  height: 1495px;
+}
+
+nav{
+  width: 1440px;
+}
+
+
+.modal-jobDetails-head {
+  font-size: 24px;
   line-height: 24px;
-  font-weight: 600;
+  width: 340px;
+  height: 26px;
+  margin-bottom: 24px;
 }
 
-.link-black {
-  color: #262626 !important;
+.size {
+  width: 650px;
+  height: 120px;
 }
 
-.link-menu-header {
-  /* Grey / grey-1 */
-  background: #ffffff;
-  /* Elevation 1 */
-  width: 101px;
 
-  min-width: 101px;
-  height: 72px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  li > a{
-    font-family: $fon;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-    color: $Gray-6 ;
-  }
-
-
+.modal-marginb{
+  margin-bottom: 40px
 }
 
-.link-me{
-    margin-right: 20px;
+.filter{
+  display: none !important;
 }
+/****Login/****/
+
+
+
+/****Header****/
+@import 'Landi/Header';
+/****Header****/
+
+/****Banner******/
+@import 'Landi/Banner';
+/****Banner******/
+
+/****After-Banner*/
+@import 'Landi/After-Banner';
+/****After-Banner*/
+
+/****Testimonial*/
+@import 'Landi/Testimonial';
+/****Testimonial*/
+
+/****Contacts****/
+@import 'Landi/Contacts';
+/****Contacts****/
+
+
+/************JobList************/
+
+/****Header****/
+@import 'JobList/Header';
+/****Header****/
+
+/****Sidebar****/
+@import 'JobList/sidebar';
+
+/****Sidebar****/
+
+/****YourApplication****/
+@import 'JobList/YourApplication';
+/****YourApplication****/
+
+
+/****YourProfile****/
+@import 'JobList/YourProfile';
+
+
+/************JobList************/
+
+
+/************Recreuiter************/
+@import 'Recreuiter/ModalApplicationDetails';
+@import 'Recreuiter/ModalJobCanditates';
+@import 'Recreuiter/ModalPostNewJob';
+
+/****Sing-Up-Recreuiter****/
+@import 'SingUpRecreuiter/SingUpRecreuiter';
+
